@@ -821,3 +821,18 @@ Migrating to CreateAnswers (20151030072735)
             FROM sqlite_temp_master
             WHERE name='index_comments_on_post_id' AND type='index'
 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "First Post"], ["body", "This is the first post in our system"], ["created_at", "2015-10-30 16:44:15.165348"], ["updated_at", "2015-10-30 16:44:15.165348"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "First comment!"], ["post_id", 1], ["created_at", "2015-10-30 16:48:42.161838"], ["updated_at", "2015-10-30 16:48:42.161838"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" ASC LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Second comment!"], ["post_id", 1], ["created_at", "2015-10-30 16:53:29.181941"], ["updated_at", "2015-10-30 16:53:29.181941"]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
