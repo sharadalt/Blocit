@@ -5,12 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  #root to: 'welcome#index'
+  root to: 'welcome#index'
   #root to: 'welcome#contact'
-  root to: 'welcome#faq'
-=======
+  #root to: 'welcome#faq'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -59,10 +56,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
->>>>>>> fe966473a8bffbcceb9da441c18896d3f5c80076
-=======
-  root to: 'welcome#index'
-  #root to: 'welcome#contact'
-  #root to: 'welcome#faq'
->>>>>>> checkpoint_27_assignment
 end
