@@ -4442,3 +4442,141 @@ Processing by PostsController#show as HTML
   Parameters: {"id"=>"1"}
   Rendered posts/show.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 05:48:20 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 05:48:29 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 05:48:43 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 165ms (Views: 148.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 05:49:20 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 05:49:30 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 179ms (Views: 168.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 05:54:01 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 05:54:08 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 214ms (Views: 196.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 05:54:11 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 162ms (Views: 152.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 06:55:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 06:56:09 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 129ms (Views: 116.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 06:56:13 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 127ms (Views: 119.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 07:04:51 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:05:02 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 134ms (Views: 121.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:05:06 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 124ms (Views: 117.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 07:08:06 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:08:16 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 102ms (Views: 94.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:08:25 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 99ms (Views: 92.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 07:09:45 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-01 07:09:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:10:10 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 120ms (Views: 112.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 69.181.65.0 at 2015-11-01 07:10:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 117ms (Views: 109.1ms | ActiveRecord: 1.9ms)
