@@ -1324,3 +1324,292 @@ Migrating to CreateAnswers (20151030072735)
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments"
   [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 18:39:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x00000004461168>:0x00000004460740>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__889292744598704547_35695140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.6ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 18:45:03 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x00000004461168>:0x007fae760bf2a8>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__889292744598704547_35695140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 18:51:59 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x00000004461168>:0x00000004585530>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__889292744598704547_36395220'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.1ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 18:53:12 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x00000004461168>:0x00000002100818>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__889292744598704547_36395220'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 18:54:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x00000004e78f20>:0x00000004e78520>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_40984780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.8ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:03:22 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x007f5aa9e91348>:0x007f5aa9e90970>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_40984780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:07:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x007f5aa9e91348>:0x00000004b8f980>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_39482580'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.8ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:07:48 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x007f5aa9e91348>:0x007f5aa9bed218>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_39482580'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.8ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:11:58 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x007f5aa9e91348>:0x007f5aa99aa0a0>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Bloccit", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_70013684570320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.1ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:42:43 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x007f5aa9e91348>:0x007f5aaa9d6a00>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1371904005518714940_70013692943680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:43:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 368ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x000000043b7690>:0x000000043b6ba0>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1285256453549139962_35354000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.1ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:46:09 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x000000043b7690>:0x007f3bc5e31bf8>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1285256453549139962_35354000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/" for 69.181.65.0 at 2015-11-02 19:46:52 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `welcome_index_path' for #<#<Class:0x000000043b7690>:0x0000000452db50>):
+    11: 
+    12:     <div class="container">
+    13:       <ul class="nav nav-tabs">
+    14:         <li><%= link_to "Home", welcome_index_path %></li>
+    15:         <li><%= link_to "About", welcome_about_path %></li>
+    16:       </ul>
+    17:    
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1285256453549139962_35354000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
