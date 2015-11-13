@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  get '/about' => 'welcome#about', as: :welcome_about
   root to: 'welcome#index'
   #root to: 'welcome#contact'
   #root to: 'welcome#faq'
