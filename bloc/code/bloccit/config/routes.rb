@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'posts/index'
 
   get 'posts/show'
@@ -15,10 +16,13 @@ Rails.application.routes.draw do
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+=======
+  get 'welcome/index'
+>>>>>>> checkpoint_25
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  get 'welcome/about'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   root to: 'welcome#index'
   #root to: 'welcome#contact'
@@ -77,4 +81,9 @@ Rails.application.routes.draw do
   #root to: 'welcome#faq'
   #root to: 'welcome#about'
 >>>>>>> bb2fe0795aebba22a96a6760839bcc152a1d9586
+=======
+  root to: 'welcome#index'
+  
+>>>>>>> checkpoint_25
 end
+
