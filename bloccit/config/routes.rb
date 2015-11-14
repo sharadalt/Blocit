@@ -1,28 +1,10 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-
-  get 'posts/show'
-
-  get 'posts/new'
-
-  get 'posts/edit'
-  
-  resources :posts
-  
-  get "welcome/index"
-  get "welcome/about"
-  get 'about' => 'welcome#about'
-  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-<<<<<<< HEAD
-  root to: 'welcome#index'
-  #root to: 'welcome#contact'
-  #root to: 'welcome#faq'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -71,10 +53,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-=======
-   root to: 'welcome#index'
-  #root to: 'welcome#contact'
-  #root to: 'welcome#faq'
-  #root to: 'welcome#about'
->>>>>>> bb2fe0795aebba22a96a6760839bcc152a1d9586
 end
