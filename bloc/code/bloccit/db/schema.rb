@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 20151030072735) do
 
@@ -53,4 +54,8 @@ ActiveRecord::Schema.define(version: 20151029175914) do
 
 =======
 >>>>>>> Stashed changes
+=======
+ActiveRecord::Schema.define(version: 0) do
+
+>>>>>>> checkpoint_26
 end
