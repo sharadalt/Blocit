@@ -13,10 +13,8 @@ source 'https://rubygems.org'
  group :development, :test  do
    gem 'sqlite3'
    gem 'rspec-rails'
-<<<<<<< Updated upstream
    gem 'pry-rails'
-=======
->>>>>>> Stashed changes
+
  end
  
  # Use SCSS for stylesheets
