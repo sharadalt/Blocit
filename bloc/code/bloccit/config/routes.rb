@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get 'posts/new'
 
+<<<<<<< HEAD
   get 'posts/edit'
   
   resources :posts
@@ -19,5 +20,13 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
   root to: 'welcome#index'
+=======
+   root to: 'welcome#index'
+  #root to: 'welcome#contact'
+  #root to: 'welcome#faq'
+  #root to: 'welcome#about'
+  get "welcome/index"
+  get "welcome/about"
+>>>>>>> checkpoint_27
 end
 
