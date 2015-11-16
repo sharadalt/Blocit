@@ -35,3 +35,5 @@ include RandomData
  Post.find_or_create_by(title: "Unique Title2", body: "Unique body2")
 
  
+
+ 
