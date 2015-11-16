@@ -19,3 +19,4 @@
       #root to: 'welcome#faq'
       #root to: 'welcome#about'
 end
+
