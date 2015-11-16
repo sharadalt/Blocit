@@ -1,8 +1,4 @@
-<<<<<<< HEAD
  # #5
-=======
-# #5
->>>>>>> master
  module RandomData
  # #6
    def random_paragraph

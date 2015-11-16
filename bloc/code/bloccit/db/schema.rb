@@ -11,8 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 20151030072735) do
 
   create_table "answers", force: :cascade do |t|
@@ -23,9 +21,6 @@ ActiveRecord::Schema.define(version: 20151030072735) do
   end
 
   add_index "answers", ["question_id"], name: "index_answers_on_question_id"
-=======
-ActiveRecord::Schema.define(version: 20151029175914) do
->>>>>>> Stashed changes
 
   create_table "comments", force: :cascade do |t|
     t.text     "body"
@@ -43,7 +38,6 @@ ActiveRecord::Schema.define(version: 20151029175914) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< Updated upstream
   create_table "questions", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
@@ -52,10 +46,4 @@ ActiveRecord::Schema.define(version: 20151029175914) do
     t.datetime "updated_at", null: false
   end
 
-=======
->>>>>>> Stashed changes
-=======
-ActiveRecord::Schema.define(version: 0) do
-
->>>>>>> checkpoint_26
 end
