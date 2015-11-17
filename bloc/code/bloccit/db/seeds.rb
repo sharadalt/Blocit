@@ -34,6 +34,19 @@ include RandomData
  Post.find_or_create_by(title: "Unique title", body:"Unique body")
  Post.find_or_create_by(title: "Unique Title2", body: "Unique body2")
 
+# Create Advertisements
+ 50.times do
+ # #1
+   Advertisement.create!(
+ # #2
+     title:  RandomData.random_sentence,
+     copy:   RandomData.random_paragraph
+   )
+ end
+ advertisements = Advertisement.all
+ 
+ puts "Seed finished"
+ puts "#{Advertisement.count} advertisements created"
  
 
  
