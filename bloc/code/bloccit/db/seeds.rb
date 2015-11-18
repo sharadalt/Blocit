@@ -48,5 +48,19 @@ include RandomData
  puts "Seed finished"
  puts "#{Advertisement.count} advertisements created"
  
+ # Create Questions
+ 50.times do
+ # #1
+   Question.create!(
+ # #2
+     title:  RandomData.random_sentence,
+     body:   RandomData.random_paragraph
+   )
+ end
+ questions = Advertisement.all
+ 
+ puts "Seed finished"
+ puts "#{Question.count} questions created"
+ 
 
  
