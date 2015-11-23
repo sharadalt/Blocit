@@ -10,20 +10,7 @@
    </div>
    
    <div class = "col-md-8">
-      <%= form_for [@topic,@post] do |f| %>
-       <div class = "form-group">
-         <%= f.label :title %>
-         <%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
-       </div>
-       <div class = "form-group">
-         <%= f.label :body %>
-         <%= f.text_field :body, class: 'form-control', placeholder: "Enter post body" %>
-       </div>
-        <div class = "form-group">
-         <%= f.submit "save", class: 'btn btn-success' %>
-       </div>
-       <% end %>
-      </div>
+       <%= render partial: 'form', locals: { topic: @topic, post: @post } %>
    </div>
 </div>
 
