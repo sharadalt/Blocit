@@ -14,7 +14,7 @@ RSpec.describe PostsController, :type => :controller do
           get :new, topic_id: my_topic.id
           expect(response).to render_template :new
       end
-      it "instantiates @post" do
+      it "intializes @post" do
           get :new, topic_id: my_topic.id
           expect(assigns(:post)).not_to be_nil
       end
@@ -26,7 +26,7 @@ RSpec.describe PostsController, :type => :controller do
       end
  
  # #5
-      it "assigns the new post to @post" do
+      it "assigns the Post.last to @post" do
         post :create, topic_id: my_topic.id, post: {name: RandomData.random_sentence, description: RandomData.random_paragraph}
         expect(assigns(:post)).to eq Post.last
       end

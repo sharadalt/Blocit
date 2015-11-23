@@ -16,6 +16,16 @@ include RandomData
   end
   
 topics = Topic.all
+
+# Create SponsoredPosts
+ 50.times do
+   SponsoredPost.create!(
+     topic: topics.sample,
+     title:  RandomData.random_sentence,
+     body:   RandomData.random_paragraph
+   )
+ end
+ posts = SponsoredPost.all
  
  # Create Posts
  50.times do
@@ -69,6 +79,7 @@ topics = Topic.all
   
  puts "Seed finished"
  puts "#{Post.count} posts created"
+ puts "#{SponsoredPost.count} sponsored_posts created"
  puts "#{Comment.count} comments created"
  puts "#{Advertisement.count} advertisements created"
  puts "#{Question.count} questions created"

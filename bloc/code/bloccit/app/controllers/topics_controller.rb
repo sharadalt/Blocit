@@ -23,7 +23,7 @@ class TopicsController < ApplicationController
        flash[:error] = "Error creating topic. Please try again."
        render :new
      end
-   end
+    end
    
    def edit
      @topic = Topic.find(params[:id])
