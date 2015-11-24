@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   resources :topics do
     resources :posts, except: [:index]
     resources :sponsored_posts
-    resources :users, only: [:new, :create]
   end
   resources  :advertisements
   resources  :question
+  resources :users, only: [:new, :create]
   
   get 'about' => 'welcome#about'
   
