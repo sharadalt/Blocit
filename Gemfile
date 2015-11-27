@@ -16,6 +16,7 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'pry-rails'
    gem 'bcrypt'
+   gem 'hirb'
 
  end
  

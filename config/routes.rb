@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   resources  :advertisements
   resources  :question
   resources :users, only: [:new, :create]
+  post '/users/confirm' => 'users#confirm'
   
   get 'about' => 'welcome#about'
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
