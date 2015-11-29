@@ -118,11 +118,5 @@ RSpec.describe QuestionController, :type => :controller do
           count = Question.where({id: my_qt.id}).size
           expect(count).to eq 0
         end
-    
-        it "redirects to posts index" do
-          delete :destroy, {id: my_qt.id}
-    # #7
-          expect(response).to redirect_to question_path
-        end
     end
 end

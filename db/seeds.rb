@@ -7,13 +7,23 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 include RandomData
 
+# Create Users
+5.times do
+  user = User.create!(
+    name:     RandomData.random_name,
+    email:    RandomData.random_email,
+    password: RandomData.random_sentence
+    )
+end
+users = User.all
+
 # Create Topics
- 15.times do
+15.times do
   Topic.create!(
-   name: RandomData.random_sentence, 
-   description: RandomData.random_paragraph
-   )
-  end
+    name: RandomData.random_sentence, 
+    description: RandomData.random_paragraph
+    )
+end
   
 topics = Topic.all
 
@@ -30,6 +40,7 @@ topics = Topic.all
  # Create Posts
  50.times do
    Post.create!(
+     user:   users.sample,
      topic: topics.sample,
      title:  RandomData.random_sentence,
      body:   RandomData.random_paragraph
@@ -74,10 +85,14 @@ topics = Topic.all
  end
  questions = Question.all
  
+ user = User.first
+ user.update_attributes!(
+   email: 'sharada@myway.com', # replace this with your personal email
+   password: 'helloworld'
+ )
  
- 
-  
  puts "Seed finished"
+ puts "#{User.count} users created"
  puts "#{Post.count} posts created"
  puts "#{SponsoredPost.count} sponsored_posts created"
  puts "#{Comment.count} comments created"
