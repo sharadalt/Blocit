@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
       format: { with: EMAIL_REGEX }
 
     has_secure_password
-    enum role: [:member, :admin]
+    enum role: [:member, :admin, :moderator]
     
     def organize_name
         if name
