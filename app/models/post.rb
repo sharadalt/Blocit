@@ -5,6 +5,9 @@ class Post < ActiveRecord::Base
     has_many :votes, dependent: :destroy
     has_many :labelings, as: :labelable
     has_many :labels, through: :labelings
+    
+    
+    
     default_scope { order('rank DESC') }
     scope :ordered_by_title, -> { order('title DESC') }
     scope :ordered_by_reverse_created_at, -> { order('created_at ASC') }
@@ -30,4 +33,5 @@ class Post < ActiveRecord::Base
       new_rank = points + age_in_days
       update_attribute(:rank, new_rank)
     end
+    
 end

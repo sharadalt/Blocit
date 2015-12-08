@@ -65,6 +65,7 @@ RSpec.describe Post, type: :model do
        end
      end
      
+     
      describe "#update_rank" do
  # #28
        it "calculates the correct rank" do
