@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   end
   resources  :advertisements
   resources  :question
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
   resources :sessions, only: [:new, :create, :destroy]
   post '/users/confirm' => 'users#confirm'
   
