@@ -90,6 +90,16 @@ topics = Topic.all
    role: 'admin'
  )
  
+ # Create another admin user
+ 
+ # Create an admin user
+ admin = User.create!(
+   name: 'Canyon',
+   email: 'canyon.the.malamute@gmail.com',
+   password: 'password',
+   role: 'admin'
+ )
+ 
  #create a member
  
  member = User. create!(

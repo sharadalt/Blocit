@@ -29,6 +29,15 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root to: 'welcome#index'
+  
+  namespace :api do
+     namespace :v1 do
+       resources :users, only: [:index, :show]
+       resources :topics, only: [:index, :show]
+     end
+  end
+  
+  
   #root to: 'welcome#contact'
   #root to: 'welcome#faq'
   # Example of regular route:
