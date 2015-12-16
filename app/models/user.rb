@@ -34,7 +34,6 @@ class User < ActiveRecord::Base
               names << name_portion.capitalize
           end
           self.name = names.join(" ")
-          puts self.name
         end
     end
     
